@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: Mukta Vaani,sans-serif;
+    background: linear-gradient(rgb(50, 39, 207),rgb(189, 59, 156));
+}
