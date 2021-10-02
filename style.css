@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;400&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -14,4 +15,43 @@ body{
     overflow: hidden;
     font-family: Mukta Vaani,sans-serif;
     background: linear-gradient(rgb(50, 39, 207),rgb(189, 59, 156));
+}
+
+.search{
+    height: 50px;
+    position: relative;
+}
+
+.search input{
+    width: 50px;
+    height: 50px;
+    font-family: Mukta Vaani,sans-serif;
+    font-weight: 400;
+    border: 0;
+    font-size: 18px;
+    background-color: aliceblue;
+    transition: width .4s ease;
+}
+
+.search .button{
+   position: absolute;
+   height: 50px;
+   left: 0%;
+   top: 0%;
+   width:50px;
+   background-color: aliceblue;
+   font-size: 20px;
+   transition: transform .3s ease;
+}
+
+.search.active .button{
+    transform: translateX(200px);
+}
+
+.search.active .input{
+    width: 200px;
+}
+
+.search .input:focus .search .button:focus{
+    outline: 0;
 }
